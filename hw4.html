@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="working.jpg" alt="" width="200" height="150" id="myImage">
+    <button onclick="removeImage()">IMAGE</button> <br>
+
+   <p><button ondblclick="showImage()">Image</button></p><br>
+
+<img id="hiddenImage" src="working.jpg" alt="" width="200" style="display:none;">
+
+<script>
+    function showImage() {
+        var img = document.getElementById("hiddenImage").style.display = "block"; }
+
+    
+        
+        document.write("Is 1 strictly equal to '1'?: " + (1 === "1"))
+
+        function removeImage(){
+          document.getElementById("myImage").style.display = "none";
+
+        }
+
+    </script>
+</body>
+</html>

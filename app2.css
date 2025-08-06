@@ -1,0 +1,10 @@
+body{
+    background-color: aqua;
+}
+.ingredients{
+    border-top: 3px solid green;
+
+}
+.div1:hover{
+    background-color: blue;
+}

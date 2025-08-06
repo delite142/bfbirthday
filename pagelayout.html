@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body onload="checksupport()">
+            
+            <style>
+                #navlayout{
+                    width: 100%;
+                    float: left;
+                    margin: 0 0 3em 0;
+                    list-style: none;
+                    background-color: #f2f2f2;
+                    border-bottom: 1px solid #ccc;
+                    border-top: 1px solid #ccc;
+                }
+                #navlayout li{
+                    float: left;
+                }
+                #navlayout li a{
+                 display: block;
+                 padding: 8px 15px;
+                 text-decoration: none;
+                 font-weight: bold;
+                 color: #069;
+                 border-right: 1px solid #ccc;
+                }
+                #navlayout li a:hover{
+                    color: #c00;
+                    background-color: #fff;
+                }
+            </style>
+            <img src="resting.jpg" width="133" height="100" border="0" alt="">
+            <h1>Blossom's Restaurant</h1>
+            <h5><i>The Best menus since 1978</i></h5>
+            <navlayout>
+                <hr>
+                <ul id="navlayout">
+                    <li><a href="#" onclick="showimage()">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </navlayout>
+            <img src="working.jpg" alt="" width="135" height="100"
+    border="0" style="display:none;" id="image1">
+
+            <table>
+                <tr>
+                    <td>
+                        <b>Food is now in stock</b>
+                        <i>
+                            We have just recieved a large amount of food
+                            with prices as low as 500 naira.
+                        </i>
+                    </td>
+                </tr>
+            </table>
+            <form name="myform">
+                <label for="">Enter NAME</label>
+                <input type="text" id="name">
+
+                <br>
+                <label> Enter Age</label>
+                <input type="text" id="age">
+
+                <br>
+                <input type="button". value="Submit" onclick="store()">
+
+            </form>
+            <script>
+                // document.write("Welcome to the digital word");
+
+                // var studentid;
+                // var studentName;
+
+                // studentid=50;
+                // studentName = "<br>David Fernando";
+
+                // var studname="David", studage=15;
+                // document.write(studentName)
+
+                // document.write("hello big vin, i am $(studage)")
+
+                
+               //these are java script data types
+               /*
+               this is a multiline comment
+            */
+                // var name = true
+                // var john = false
+                // var app = null
+                // var num = 10
+                // var str = "john 34 street";
+                // document.write("<h1> You need to have a \t, if you want a shop</h1> ");
+                // alert("please fill this form \n and all the field");
+                // confirm("are you sure you want to close this page");
+                // prompt("enter your name here")
+                // eval("2+2")
+
+                // var value = null
+                //  var numone = prompt("enter the first value to perform the muliplication")
+                //  var numtwo = prompt("enter the second value to perform the multiplication")
+                // var result = eval(numone * numtwo)
+                //  alert("the result of the multiplication is " + result)
+
+                // document.write("<br>The result of multiplying " + numone + " and "+ numtwo + " is " + result)
+
+            //    var name = prompt("please enter your name")
+            //     var age = prompt("how old are you?")
+            //     alert("WELCOME " + name + " who's age is " + age + " to my html web page, it is lovely to see you!!")
+             
+            function showimage()
+            {
+                document.getElementById("image1").style.display="block"
+            }
+             
+            var loanamount = 34500;
+            var interest = 8;
+            var interestamount, totalamount;
+
+            interestamount = loanamount *(interest/100);
+            totalamount = loanamount + interestamount;
+            document.write("<b> The amount to be paid ($):</b>" + totalamount + "<br>")
+
+            // var number = 3 
+            // alert("number after increment = " + ++number)
+            // alert("number after decrement = " + --number)
+
+            var firstnumber = 3;
+            var secondnumber = 4
+
+            // document.write("First number is greater than second number: " + (firstnumber > secondnumber))
+            // document.write("<br> First number is less than second number: " + (firstnumber < secondnumber))
+            // document.write("<br> First number is equal to the second number: " + (firstnumber == secondnumber))
+
+            // var age = parseInt(prompt("Enter age", "Age"))
+            // status = (typeof("you are " + age + " years old, so you are" + status + " to vote.")
+
+            // var a = 9
+            // var b = 14
+            // alert(a^b)
+
+            // var quantity = parseInt(prompt("Enter quantity of product: ", 0))
+            // if(quantity < 0)
+            // {
+            //     alert("please enter A POSITIVE NUMBER. ")
+            // } 
+
+            // var names = new Array('james', 'kelvin', 'brad');
+            // for(var i = 0; i < names.length; i++)
+            // {
+            //     document.write('<li>' + names[i] + '</li>')
+            // }
+
+            // function miles_to_km(miles)
+            // {
+            //     return miles * 1.609
+            // }
+            // var miles = prompt("Enter the miles: ");
+            // var km = miles_to_km(miles);
+            // alert(km)
+
+            // function inch_to_cm(inch){
+            //     return inch * 2.54
+            // }
+            // var inch = prompt("enter inches: ");
+            // var cm = inch_to_cm(inch);
+            
+            // alert(cm + "cm")
+
+            // let = student_details = new Objects()
+            // student_details.first_name = 'John';
+            // student_details.last_name = 'Fernando';
+            // student_details.aqge = '15';
+            // alert("students name: " + student_details.first_name + "students.lastname: " + student_details.last_name)
+
+            // let fullname = new String('David James')
+            // document.write("Student fullname is: " + fullname.toUpperCase())
+            // document.write("<br>Number of characters is: " + fullname.length)
+            // document.write("<br> Character at position 3 is :  " + fullname.charAt(3))
+            // document.write("<br>Student first name is : " + fullname.split(' ' , 2))
+
+            // let num = 5.4674
+            // document.write("<br> the floor division of number is: " + Math.floor(num))
+            // document.write("<br> the ceil divivision of number is: " + Math.ceil(num))
+            // document.write("<br> 2 raised to power 3 is: " + Math.pow(2, 3))
+            // document.write("<br> square root of number is: " + Math.sqrt(num))
+
+            // let today = new Date();
+            // document.write("<br> Todays date is : " + today.getDate() + "/" + today.getMonth() + "/" + today.getFullYear());
+
+            // let car = new Object();
+            // car.name = "Ford Mustang"
+            // car.price = "$45,000"
+            // car.mileage = "45 miles / litre"
+
+            // with(car)
+            // {
+            //     document.write("<p> Price: " + price + "</p>")
+            //     document.write("<p> Name: " + name + "</p>")
+            //     document.write("<p> Mileage: " + mileage + "</p>")
+                
+            // }
+
+            // function checksupport()
+            // {
+            //     if(("sessionStorage" in window) && window ["sessionStorage"] !== null);
+            // {
+            //     sessionStorage.setItem(6, "The book is wonderful");
+            //     alert(`${sessionStorage.getItem(6)}`)
+            //     return;
+            // }
+            // alert("Your browser does not support web storage");
+            // }
+
+            function store()
+            {let name = document.getElementById('name').value;
+                sessionStorage.setItem("username",name);
+                let data = sessionStorage.getItem("username");
+                
+                 sessionStorage.setItem('age', document.getElementById('age').value)
+                 let agevalue = sessionStorage.getItem("age")
+                alert(`${data} is ${agevalue} years old`)
+                sessionStorage.removeItem("age");
+                sessionStorage.clear();
+                    
+                
+            }
+             </script>
+
+            
+        </body>
+    </head>
+</html>

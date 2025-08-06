@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Cyrus🎉🎉🎉🎉</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, silver, gold);
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      text-align: center;
+      padding: 30px;
+    
+    }
+    h1 {
+      color: #444;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    .message {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: rgba(255,255,255,0.8);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    #countdown {
+      font-size: 1.5em;
+      margin: 20px 0;
+    }
+    .surprise-btn {
+      background-color: gold;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .hidden-message {
+      display: none;
+      margin-top: 15px;
+      background: white;
+      border: 2px dashed silver;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .card {
+      margin: 40px auto;
+      width: 300px;
+      height: 180px;
+      perspective: 1000px;
+    }
+    .inner-card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+    }
+    .card:hover .inner-card {
+      transform: rotateY(180deg);
+    }
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+    }
+    .front {
+      background-color: white;
+      border: 3px solid gold;
+    }
+    .back {
+      background-color: gold;
+      color: white;
+      transform: rotateY(180deg);
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Happy 19th Birthday💖</h1>
+
+  <div class="message">
+    Dear Cyrus,<br><br>
+    You deserve all the love, laughter, and cake in the world today (and always)!  
+    I hope this little page makes you smile even though I couldn't. 💫 
+    
+    It was made with love, care and intentionality. Keep being a good person to everyone around you.
+    <br> I wish you a year filled with long life, God's blessings, genuine happiness
+  ,moneyyyyy, prosperity and all the good things life has to offer to you noew and forevermore. AMEN. You are blessed beyond measures.
+    <br>Don't forget who you are and the potential you have.
+    <br>Happy birthday once again.💕🎉
+  </div>
+
+  <div id="countdown">
+    BIRTHDAY COUNTDOWN: <span id="timer"></span>
+  </div>
+
+  <button class="surprise-btn" onclick="showMessage()">Click me 🎉</button>
+  <div class="hidden-message" id="hiddenMessage">
+    🥰Surprise! You’ve just opened your  digital birthday card 🎂🎉.
+  </div>
+
+  <div class="card">
+    <div class="inner-card">
+      <div class="front">
+        🎁 Open Me
+      </div>
+      <div class="back">
+        Hope you enjoy your day today 🎂🎉🎉  
+        
+        <br><br>
+        Sending hugs & kisses 💋
+         <br><br>~ From Delite💕💕💕
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('hiddenMessage').style.display = 'block';
+    }
+
+    // Countdown Timer
+    const targetDate = new Date("2025-08-07T00:00:00"); 
+    const timerElement = document.getElementById("timer");
+
+    function updateCountdown() {
+      const now = new Date();
+      const distance = targetDate - now;
+      if (distance < 0) {
+        timerElement.innerHTML = "🎉 HAPPY BIRTHDAY!!!";
+        return;
+      }
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((distance / 1000 / 60) % 60);
+      const seconds = Math.floor((distance / 1000) % 60);
+
+      timerElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+  </script>
+
+</body>
+</html>

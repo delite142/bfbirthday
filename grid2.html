@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .grid-container > div
+     {
+        background-color: peachpuff;
+        padding: 20px 0;
+        font-size: 30px;
+     }
+     .sctn1{
+        word-spacing:100px;        
+        text-align: center;
+    
+     }
+     .sctn2{
+        text-align: left;
+     }
+     .sctn3{
+        text-align:center;
+     }
+     .sctn1{grid-area:header;}
+     .sctn2{grid-area:menu;}
+     .sctn3{grid-area: main;}
+     .sctn4{grid-area: footer;}
+
+      .grid-container
+     {
+        display:grid;
+        grid-template-columns:auto auto auto auto auto auto;
+        grid-template-areas:
+         'header header header header header header' 'menu main main main main main'
+         'menu footer footer footer footer footer';
+         
+        grid-gap:10px;
+        background-color: lightcoral;
+        padding:10px;
+     }
+</style>
+</head>
+<body>
+ <div class="grid-container">
+      <div class="sctn1">HTML app.css app.html app2.css app2.html CSS</div>
+     <div class="sctn2"><u>CONTENT</u>
+        <ul>
+        <p><a href="www.example.com"> link1</a><p>
+        <p><a href="https://media.istockphoto.com/id/677030428/photo/asian-woman-waking-up-in-the-morning-outstretched-arms.jpg?s=612x612&w=0&k=20&c=amPWI4fAMx1BKIKj1a-9nFFHQpJyAvcdQj9IJEMw2gw=">photo</a><p>
+        
+     </div>
+     <div class="sctn3"><img src="waking up.jpg" alt="photo"></div>
+     <div class="sctn4">practice homework layout done by delight</div>
+
+    </div>   
+</body>
+ </html>
